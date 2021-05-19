@@ -1,0 +1,55 @@
+@import "colours";
+
+.HomePage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.Toggle{
+    position: absolute;
+    top: 0%;
+    right:0%;
+}
+
+.hero-text{
+    color: $text-black;
+    text-align: center;
+    font-size: 3.6rem;
+    .name-text{
+        color: $text-red;
+    }
+    .hero-name{
+        color: $text-brown;
+    }
+}
+
+.intro{
+    text-align: center;
+    color: $text-black;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    .icon-container{
+        margin-right: 1rem;
+        .icon{
+            font-size: 3rem;
+            color: $icon-grey;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .github:hover{
+            color: $github;
+        }
+
+        .linkedin:hover{
+            color: $linkedin;
+        }
+    }
+}
