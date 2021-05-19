@@ -40,6 +40,9 @@ function NavBar() {
 
                 <footer className="footer">
                     <p>
+                        Dark Mode
+                    </p>
+                    <p>
                         @2021 Connor Czarnuch
                     </p>
                 </footer>

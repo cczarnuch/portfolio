@@ -28,7 +28,7 @@
         .nav-item{
             list-style: none;
             text-align: center;
-            color: $text-black;
+            color: $text;
             a{
                 text-decoration: none;
                 font: inherit;
@@ -58,11 +58,11 @@
 
     .footer{
         width: 100%;
-        border-top: 1px solid $border;
         p{
+            border-top: 1px solid $border;
             text-align: center;
             padding: 1rem 0;
-            color: $text-black;
+            color: $text;
         }
     }
 }
