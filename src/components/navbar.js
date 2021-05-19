@@ -12,7 +12,7 @@ function NavBar() {
 
                 <ul className="nav-items">
                     <li className="nav-item">
-                        <NavLink to="/home" exact activeClassName="active">
+                        <NavLink to="/" exact activeClassName="active">
                             Home
                         </NavLink>
                     </li>
