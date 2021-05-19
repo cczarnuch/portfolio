@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Typist from 'react-typist';
-import Toggle from 'react-toggle';
 import { faGithub, faLinkedin, } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,8 +11,7 @@ function HomePage() {
             <header className="hero">
                 <h1 className="hero-text">
                     Hi, my <span className="name-text">name</span> =
-                    <Typist className="hero-name">
-                        <Typist.Delay ms={1000} />
+                    <Typist className="hero-name" startDelay={1000} cursor={{ hideWhenDone: true, hideWhenDoneDelay: 500 }}>
                         Connor <l />
                         <Typist.Delay ms={250} />
                         Czarnuch
