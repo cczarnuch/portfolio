@@ -18,6 +18,11 @@ class App extends Component {
           <div className="sidebar">
             <NavBar />
           </div>
+          <div className='nav-button'>
+            <div className='line1'></div>
+            <div className='line2'></div>
+            <div className='line3'></div>
+          </div>
           <div className="main-content">
             <div className="content">
               <Switch>

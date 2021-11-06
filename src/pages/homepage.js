@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Typist from 'react-typist';
 import { faGithub, faLinkedin, } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,12 +20,12 @@ function HomePage() {
                     I am a software engineering student at McMaster University.
                 </p>
                 <div className="icons">
-                    <Link className="icon-container" to={{ pathname: 'https://github.com/cczarnuch' }} target='_blank'>
+                    <a className="icon-container" href='https://github.com/cczarnuch' target='_blank' rel='noreferrer'>
                         <FontAwesomeIcon icon={faGithub} className="icon github" />
-                    </Link>
-                    <Link className="icon-container" to={{ pathname: 'https://www.linkedin.com/in/connor-czarnuch/' }} target='_blank'>
+                    </a>
+                    <a className="icon-container" href='https://www.linkedin.com/in/connor-czarnuch/' target='_blank' rel='noreferrer'>
                         <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
-                    </Link>
+                    </a>
                 </div>
             </header>
         </div>

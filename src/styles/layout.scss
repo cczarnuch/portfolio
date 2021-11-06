@@ -7,6 +7,11 @@
         background-color: $sidebar;
         position: fixed;
         border-right: 1px solid $border;
+        @media screen and (max-width: 1000px) {
+            transition: all 0.4s ease-in-out;
+            transform: translateX(-100%);
+            // width: 30%;
+        }
     }
 
     .main-content{
@@ -17,5 +22,43 @@
         // background-image: url(../img/dots.svg);
         display: grid;
         position: relative;
+        .content{
+            margin: 5rem 15rem;
+        }
+        @media screen and (max-width: 1000px) {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.nav-button{
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top: 10%;
+    width: 5rem;
+    height: 5rem;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    .line1, .line2, .line3{
+        height: 0.4rem;
+        width: 60%;
+        background-color: $icon-white;
+        pointer-events: none;
+        display: none;
+        border-radius: 20px;
+        &:not(:last-child){
+            margin-bottom: 0.5rem;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        display: block;
+        .line1, .line2, .line3{
+            display: block;
+        }
     }
 }
